@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Synchrobench-java
+A benchmark-suite to evaluate synchronization techniques
+-------------------------------------------------------------------------------
+
+Benchmark parameters
+--------------------
+  Detailed stats:          	disabled
+  Number of threads:       	4
+  Length:                  	2000 ms
+  Write ratio:             	100 %
+  WriteAll ratio:          	0 %
+  Snapshot ratio:          	0 %
+  Size:                    	100 elts
+  Range:                   	200 elts
+  WarmUp:                  	1 s
+  Iterations:              	1
+  Benchmark:               	linkedlists.lockbased.CoarseGrainedListBasedSet
+Thread #2 finished.
+Thread #1 finished.
+Thread #0 finished.
+Thread #3 finished.
+Thread #0 finished.
+Thread #3 finished.
+Thread #2 finished.
+Thread #1 finished.
+-------------------------------------------------------------------------------
+Benchmark statistics
+-------------------------------------------------------------------------------
+  Average traversal length: 	NaN
+  Struct Modifications:     	0
+  Throughput (ops/s):       	2272162.8371628374
+  Elapsed time (s):         	2.002
+  Operations:               	4548870	( 100 %)
+    effective updates:     	2273182	( 49.97 %)
+    |--add successful:     	1136590	( 24.99 %)
+    |--remove succ.:       	1136592	( 24.99 %)
+    |--addAll succ.:       	0	( 0.00 %)
+    |--removeAll succ.:    	0	( 0.00 %)
+    size successful:       	0	( 0.00 %)
+    contains succ.:        	0	( 0.00 %)
+    unsuccessful ops:      	2275688	( 50.03 %)
