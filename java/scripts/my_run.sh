@@ -18,8 +18,8 @@ for bench in ${benchs}; do
     for i in ${size}; do
 	r=`echo "2*${i}" | bc`
 	out=${output}/nowarmup_log/${bench}-lockbased-i${i}-u${u}-t${t}.log
-	echo "java -cp bin contention.benchmark.Test -b ${benchs} -d 2000 -u ${u} -t ${t} -i ${i} -r ${r}"
-	    java -cp bin contention.benchmark.Test -b ${benchs} -d 2000 -u ${u} -t ${t} -i ${i} -r ${r} 2>&1 >> ${out}
+	echo "java -cp bin contention.benchmark.Test -b ${bench} -d 2000 -u ${u} -t ${t} -i ${i} -r ${r}"
+	    java -cp bin contention.benchmark.Test -b ${bench} -d 2000 -u ${u} -t ${t} -i ${i} -r ${r} 2>&1 >> ${out}
     done
   done
  done
